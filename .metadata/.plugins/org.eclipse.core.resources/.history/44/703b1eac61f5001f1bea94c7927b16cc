@@ -1,0 +1,25 @@
+package com.learning.springmvc;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+@Controller
+public class HomeController {
+	@RequestMapping("/")
+	public String home() {
+		return "index.jsp";
+	}
+	
+	@RequestMapping("/add")
+	public String add(HttpServletRequest req, HttpServletResponse res) {
+		int a = Integer.parseInt(req.getParameter("numOne"));
+		int b = Integer.parseInt(req.getParameter("numTwo"));
+		HttpSession session = req.getSession();
+		session.setAttribute("result", (a+b));
+		return "result.jsp";
+	}
+}

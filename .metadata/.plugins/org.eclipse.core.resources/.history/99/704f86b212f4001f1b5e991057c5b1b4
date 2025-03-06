@@ -1,0 +1,9 @@
+<html>
+<body>
+
+	<form method="post" action="upload">
+		<input type="file" multiple="multiple" /> <br /> <br /> <input
+			type="submit" value="upload" />
+	</form>
+</body>
+</html>

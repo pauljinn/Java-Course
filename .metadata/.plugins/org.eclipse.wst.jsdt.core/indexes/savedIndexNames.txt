@@ -1,0 +1,13 @@
+INDEX VERSION 1.4+C:\Users\Aman.Soni\Desktop\avaj-full-course\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3564516436.index
+1732046800.index
+2373164258.index
+3820741954.index
+3753320360.index
+2754343381.index
+3215248523.index
+3962433887.index
+636160177.index
+606595329.index
+606595329.index
+2212488839.index

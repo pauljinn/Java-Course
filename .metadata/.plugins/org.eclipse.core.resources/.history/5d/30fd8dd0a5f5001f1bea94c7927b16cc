@@ -1,0 +1,9 @@
+package com.learning.mvc.core;
+
+@Entit
+public class Student {
+	int rollNo;
+	int marks;
+	String name;
+	
+}

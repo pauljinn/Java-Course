@@ -1,0 +1,18 @@
+package com.learning.springcore;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Coder {
+	
+	
+	public Coder() {
+		super();
+		System.out.println("Creating object");
+	}
+
+	public void code() {
+		System.out.println("Coding");
+		
+	}
+}

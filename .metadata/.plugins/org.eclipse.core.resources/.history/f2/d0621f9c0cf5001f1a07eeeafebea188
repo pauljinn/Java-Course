@@ -1,0 +1,26 @@
+package com.learning.springcore;
+
+import org.springframework.stereotype.Component;
+
+
+public class Coder {
+	int age;
+	
+	public Coder() {
+		super();
+		System.out.println("Creating object");
+	}
+	
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public void code() {
+		System.out.println("Coding");
+		
+	}
+}

@@ -1,0 +1,76 @@
+package com.learning;
+
+import javax.persistence.Cacheable;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
+
+@Entity
+@Table(name = "Alien_Table")
+//Enable second level caching
+@Cacheable
+//Second level caching for only read queries
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
+public class Alien {
+	@Id
+	private int aid;
+	@Embedded
+	private Name aname;
+	//It's used when you don't want to save this object field in table
+    //@Transient
+	private String color;
+
+	
+	public Alien() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public int getAid() {
+		return aid;
+	}
+
+
+
+	public void setAid(int aid) {
+		this.aid = aid;
+	}
+
+
+
+	public Name getAname() {
+		return aname;
+	}
+
+
+
+	public void setAname(Name aname) {
+		this.aname = aname;
+	}
+
+
+
+	public String getColor() {
+		return color;
+	}
+
+
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Alien [aid=" + aid + ", aname=" + aname + ", color=" + color + "]";
+	}	
+	
+	
+}

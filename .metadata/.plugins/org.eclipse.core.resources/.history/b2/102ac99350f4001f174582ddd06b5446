@@ -1,0 +1,25 @@
+package com.learning;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+
+@Entity
+public class Student {
+	@Id
+	private int id;
+	private String name;
+	@OneToMany
+	private Laptop laptop;
+	public Student() {
+		super();
+	}
+	public Student(int id, String name, Laptop laptop) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.laptop = laptop;
+	}
+	
+	
+}

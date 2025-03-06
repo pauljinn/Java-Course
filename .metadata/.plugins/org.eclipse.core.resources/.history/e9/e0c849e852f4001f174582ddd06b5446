@@ -1,0 +1,57 @@
+package com.learning;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+
+@Entity
+public class Student {
+	@Id
+	private int id;
+	private String name;
+	@OneToMany
+	private List<Laptop> laptops;
+	
+	public Student() {
+		super();
+	}
+	
+	public Student(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.laptops = new ArrayList<>();
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Laptop> getLaptop() {
+		return laptops;
+	}
+
+	public void setLaptop(List<Laptop> laptops) {
+		this.laptops = laptops;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", laptops=" + laptops + "]";
+	}
+}

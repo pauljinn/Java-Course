@@ -1,0 +1,8 @@
+1740723462929	Rename resource 'mvc-servlet.xsd'
+1740723865828	Move 'index.jsp' to 'views'
+1740724563989	Rename type 'SpringMvcCore'
+1740724640678	Delete element
+1740724709083	Rename type 'Controller'
+1740724779955	Delete element
+1740729707488	Delete element
+1740730733538	Rename resource 'UserRepository.java'

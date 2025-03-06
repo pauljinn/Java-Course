@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Fri Feb 28 18:38:52 IST 2025
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Aman.Soni\\.m2\\repository\\org\\springframework\\spring-web\\5.3.31\\spring-web-5.3.31.jar=C\:\\Users\\Aman.Soni\\Desktop\\apache-tomcat-9.0.98\\wtpwebapps\\SpringMVCCore\\WEB-INF\\lib\\spring-web-5.3.31.jar
+org.eclipse.jst.j2ee.server\:SpringMVCCore=C\:\\Users\\Aman.Soni\\Desktop\\apache-tomcat-9.0.98\\wtpwebapps\\SpringMVCCore

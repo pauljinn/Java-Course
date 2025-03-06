@@ -1,0 +1,36 @@
+package com.learning;
+
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Alien alien = new Alien();
+        //Loading hibernate.cfg.xml
+        Configuration con = new Configuration().configure().addAnnotatedClass(Alien.class);
+        //Applying the configuration to hibernate
+        StandardServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
+        //Creating a sessionfactory.
+        SessionFactory sf = con.buildSessionFactory(reg);
+        //Opening a connection
+        Session session = sf.openSession();
+        Transaction txn =session.beginTransaction();
+//        Alien obj = new Alien();
+//        obj.setAid(1);
+//        obj.setAname(new Name("Aman", "Kumar", "Soni"));
+//        obj.setColor("Green");
+//        session.persist(obj);
+        txn.commit();
+        System.out.println(alien);
+        alien = session.get(Alien.class, 1);
+        alien = session.get(Alien.class, 1);
+        System.out.println(alien);
+        
+    }
+}

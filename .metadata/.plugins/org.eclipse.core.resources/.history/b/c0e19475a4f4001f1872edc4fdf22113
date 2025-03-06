@@ -1,0 +1,5 @@
+package com.learning.hql;
+
+public class Student {
+
+}

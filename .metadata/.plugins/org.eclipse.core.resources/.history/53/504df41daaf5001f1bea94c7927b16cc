@@ -1,0 +1,16 @@
+package com.learning.mvc.core;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class MvcController {
+	
+	@RequestMapping("/get")
+//	@ResponseBody -> When you don't want to return jsp instead json
+	public String get() {
+		//Returning index.jsp page 
+		return "index";
+	}
+}

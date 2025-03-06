@@ -1,0 +1,12 @@
+package com.learning;
+
+import org.hibernate
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Alien alien = new Alien(1, "Navin", "Green");
+        
+        Configuration
+    }
+}

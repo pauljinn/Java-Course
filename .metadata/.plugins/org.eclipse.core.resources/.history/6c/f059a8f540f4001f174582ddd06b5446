@@ -1,0 +1,43 @@
+package com.learning;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
+
+@Entity
+@Table(name = "Alien_Table")
+public class Alien {
+	@Id
+	private int aid;
+	//It's used when you don't want to save this object field in table
+//	@Transient
+	private String aname;
+	private String color;
+
+	public Alien(int aid, String aname, String color) {
+		super();
+		this.aid = aid;
+		this.aname = aname;
+		this.color = color;
+	}
+	
+	public int getAid() {
+		return aid;
+	}
+	public void setAid(int aid) {
+		this.aid = aid;
+	}
+	public String getAname() {
+		return aname;
+	}
+	public void setAname(String aname) {
+		this.aname = aname;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}	
+}
